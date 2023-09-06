@@ -41,7 +41,7 @@ n_bins = 51
 include_zero_gene = False
 batch_size = 32
 
-load_model = "save/scGPT_human"
+load_model = "data/save/scGPT_human"
 
 # %% validate settings
 assert input_style in ["normed_raw", "log1p", "binned"]
@@ -115,7 +115,7 @@ def load_gene_vocab(genes: list) -> dict:
     # settings for input and preprocessing
     pad_token = "<pad>"
     special_tokens = [pad_token, "<cls>", "<eoc>"]
-    vocab_file ="save/scGPT_human/vocab.json"
+    vocab_file ="data/save/scGPT_human/vocab.json"
 
     vocab = GeneVocab.from_file(vocab_file)
     
