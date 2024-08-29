@@ -318,7 +318,7 @@ def prepare_dataloader(
 # Create a load_data function that returns trainloader, testloader, and num_examples
 def load_data(
     batch_size: int = 32,
-    root_dir: str = "data/",
+    root_dir: str = "data/scgpt/",
     local_train: bool = False,
     **kwargs
 ):
